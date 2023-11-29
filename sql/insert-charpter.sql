@@ -1,0 +1,2583 @@
+-- INSERT INTO charpters (id, idInBook, bookId, arabic, english)
+-- VALUES
+-- --   (1, 7277, '{"title": "صحيح البخاري", "author": "الإمام محمد بن إسماعيل البخاري"}', '{"title": "Sahih al-Bukhari", "author": "Imam Muhammad ibn Ismail al-Bukhari"}'),
+-- --   (2, 7459, '{"title": "صحيح مسلم", "author": "الإمام مسلم بن الحجاج القشيري النيسابوري"}', '{"title": "Sahih Muslim", "author": "Imam Muslim ibn al-Hajjaj al-Naysaburi"}')
+-- (1, 7277, '{"title": "صحيح البخاري", "author": "الإمام محمد بن إسماعيل البخاري"}', '{"title": "Sahih al-Bukhari", "author": "Imam Muhammad ibn Ismail al-Bukhari"}'),
+-- (2, 7459, '{"title": "صحيح مسلم", "author": "الإمام مسلم بن الحجاج القشيري النيسابوري"}', '{"title": "Sahih Muslim", "author": "Imam Muslim ibn al-Hajjaj al-Naysaburi"}'),
+-- (3, 5768, '{"title": "سنن النسائي", "author": "الإمام أبو عبد الرحمن أحمد بن شعيب النسائي"}','{"title": "Sunan al-Nasa&apos;i", "author": "Imam Ahmad ibn Shu&apos;ayb al-Nasa&apos;i"}')
+
+
+-- {DEFAULT
+--           "idInBook": 1,
+--           "bookId": 1,
+--           "arabic": "كتاب بدء الوحى",
+--           "english": "Revelation"
+--         },
+--         {
+--           "idInBook": 2,
+--           "bookId": 1,
+--           "arabic": "كتاب الأذان",
+--           "english": "Call to Prayers (Adhaan)"
+--         },
+--         {
+--           "idInBook": 3,
+--           "bookId": 1,
+--           "arabic": "كتاب الجمعة",
+--           "english": "Friday Prayer"
+--         },
+--         {
+--           "idInBook": 4,
+--           "bookId": 1,
+--           "arabic": "كتاب صلاة الخوف",
+--           "english": "Fear Prayer"
+--         },
+--         {
+--           "idInBook": 5,
+--           "bookId": 1,
+--           "arabic": "كتاب العيدين",
+--           "english": "The Two Festivals (Eids)"
+--         },
+--         {
+--           "idInBook": 6,
+--           "bookId": 1,
+--           "arabic": "كتاب الوتر",
+--           "english": "Witr Prayer"
+--         },
+--         {
+--           "idInBook": 7,
+--           "bookId": 1,
+--           "arabic": "كتاب الاستسقاء",
+--           "english": "Invoking Allah for Rain (Istisqaa)"
+--         },
+--         {
+--           "idInBook": 8,
+--           "bookId": 1,
+--           "arabic": "كتاب الكسوف",
+--           "english": "Eclipses"
+--         },
+--         {
+--           "idInBook": 9,
+--           "bookId": 1,
+--           "arabic": "كتاب سجود القرآن",
+--           "english": "Prostration During Recital of Qur'an"
+--         },
+--         {
+--           "idInBook": 10,
+--           "bookId": 1,
+--           "arabic": "كتاب التقصير",
+--           "english": "Shortening the Prayers (At-Taqseer)"
+--         },
+--         {
+--           "idInBook": 11,
+--           "bookId": 1,
+--           "arabic": "كتاب التهجد",
+--           "english": "Prayer at Night (Tahajjud)"
+--         },
+--         {
+--           "idInBook": 12,
+--           "bookId": 1,
+--           "arabic": "كتاب الإيمان",
+--           "english": "Belief"
+--         },
+--         {
+--           "idInBook": 13,
+--           "bookId": 1,
+--           "arabic": "كتاب فضل الصلاة فى مسجد مكة والمدينة",
+--           "english": "Virtues of Prayer at Masjid Makkah and Madinah"
+--         },
+--         {
+--           "idInBook": 14,
+--           "bookId": 1,
+--           "arabic": "كتاب العمل فى الصلاة",
+--           "english": "Actions while Praying"
+--         },
+--         {
+--           "idInBook": 15,
+--           "bookId": 1,
+--           "arabic": "كتاب السهو",
+--           "english": "Forgetfulness in Prayer"
+--         },
+--         {
+--           "idInBook": 16,
+--           "bookId": 1,
+--           "arabic": "كتاب الجنائز",
+--           "english": "Funerals (Al-Janaa'iz)"
+--         },
+--         {
+--           "idInBook": 17,
+--           "bookId": 1,
+--           "arabic": "كتاب الزكاة",
+--           "english": "Obligatory Charity Tax (Zakat)"
+--         },
+--         {
+--           "idInBook": 18,
+--           "bookId": 1,
+--           "arabic": "كتاب الحج",
+--           "english": "Hajj (Pilgrimage)"
+--         },
+--         {
+--           "idInBook": 19,
+--           "bookId": 1,
+--           "arabic": "كتاب العمرة",
+--           "english": "`Umrah (Minor pilgrimage)"
+--         },
+--         {
+--           "idInBook": 20,
+--           "bookId": 1,
+--           "arabic": "كتاب المحصر",
+--           "english": "Pilgrims Prevented from Completing the Pilgrimage"
+--         },
+--         {
+--           "idInBook": 21,
+--           "bookId": 1,
+--           "arabic": "كتاب جزاء الصيد",
+--           "english": "Penalty of Hunting while on Pilgrimage"
+--         },
+--         {
+--           "idInBook": 22,
+--           "bookId": 1,
+--           "arabic": "كتاب فضائل المدينة",
+--           "english": "Virtues of Madinah"
+--         },
+--         {
+--           "idInBook": 23,
+--           "bookId": 1,
+--           "arabic": "كتاب العلم",
+--           "english": "Knowledge"
+--         },
+--         {
+--           "idInBook": 24,
+--           "bookId": 1,
+--           "arabic": "كتاب الصوم",
+--           "english": "Fasting"
+--         },
+--         {
+--           "idInBook": 25,
+--           "bookId": 1,
+--           "arabic": "كتاب صلاة التراويح",
+--           "english": "Praying at Night in Ramadaan (Taraweeh)"
+--         },
+--         {
+--           "idInBook": 26,
+--           "bookId": 1,
+--           "arabic": "كتاب فضل ليلة القدر",
+--           "english": "Virtues of the Night of Qadr"
+--         },
+--         {
+--           "idInBook": 27,
+--           "bookId": 1,
+--           "arabic": "كتاب الاعتكاف",
+--           "english": "Retiring to a Mosque for Remembrance of Allah (I'tikaf)"
+--         },
+--         {
+--           "idInBook": 28,
+--           "bookId": 1,
+--           "arabic": "كتاب البيوع",
+--           "english": "Sales and Trade"
+--         },
+--         {
+--           "idInBook": 29,
+--           "bookId": 1,
+--           "arabic": "كتاب السلم",
+--           "english": "Sales in which a Price is paid for Goods to be Delivered Later (As-Salam)"
+--         },
+--         {
+--           "idInBook": 30,
+--           "bookId": 1,
+--           "arabic": "كتاب الشفعة",
+--           "english": "Shuf'a"
+--         },
+--         {
+--           "idInBook": 31,
+--           "bookId": 1,
+--           "arabic": "كتاب الإجارة",
+--           "english": "Hiring"
+--         },
+--         {
+--           "idInBook": 32,
+--           "bookId": 1,
+--           "arabic": "كتاب الحوالات",
+--           "english": "Transferance of a Debt from One Person to Another (Al-Hawaala)"
+--         },
+--         {
+--           "idInBook": 33,
+--           "bookId": 1,
+--           "arabic": "كتاب الكفالة",
+--           "english": "Kafalah"
+--         },
+--         {
+--           "idInBook": 34,
+--           "bookId": 1,
+--           "arabic": "كتاب الوضوء",
+--           "english": "Ablutions (Wudu')"
+--         },
+--         {
+--           "idInBook": 35,
+--           "bookId": 1,
+--           "arabic": "كتاب الوكالة",
+--           "english": "Representation, Authorization, Business by Proxy"
+--         },
+--         {
+--           "idInBook": 36,
+--           "bookId": 1,
+--           "arabic": "كتاب المزارعة",
+--           "english": "Agriculture"
+--         },
+--         {
+--           "idInBook": 37,
+--           "bookId": 1,
+--           "arabic": "كتاب المساقاة",
+--           "english": "Distribution of Water"
+--         },
+--         {
+--           "idInBook": 38,
+--           "bookId": 1,
+--           "arabic": "كتاب فى الاستقراض",
+--           "english": "Loans, Payment of Loans, Freezing of Property, Bankruptcy"
+--         },
+--         {
+--           "idInBook": 39,
+--           "bookId": 1,
+--           "arabic": "كتاب الخصومات",
+--           "english": "Khusoomaat"
+--         },
+--         {
+--           "idInBook": 40,
+--           "bookId": 1,
+--           "arabic": "كتاب فى اللقطة",
+--           "english": "Lost Things Picked up by Someone (Luqatah)"
+--         },
+--         {
+--           "idInBook": 41,
+--           "bookId": 1,
+--           "arabic": "كتاب المظالم",
+--           "english": "Oppressions"
+--         },
+--         {
+--           "idInBook": 42,
+--           "bookId": 1,
+--           "arabic": "كتاب الشركة",
+--           "english": "Partnership"
+--         },
+--         {
+--           "idInBook": 43,
+--           "bookId": 1,
+--           "arabic": "كتاب الرهن",
+--           "english": "Mortgaging"
+--         },
+--         {
+--           "idInBook": 44,
+--           "bookId": 1,
+--           "arabic": "كتاب العتق",
+--           "english": "Manumission of Slaves"
+--         },
+--         {
+--           "idInBook": 45,
+--           "bookId": 1,
+--           "arabic": "كتاب الغسل",
+--           "english": "Bathing (Ghusl)"
+--         },
+--         {
+--           "idInBook": 46,
+--           "bookId": 1,
+--           "arabic": "كتاب المكاتب",
+--           "english": "Makaatib"
+--         },
+--         {
+--           "idInBook": 47,
+--           "bookId": 1,
+--           "arabic": "كتاب الهبة وفضلها والتحريض عليها",
+--           "english": "Gifts"
+--         },
+--         {
+--           "idInBook": 48,
+--           "bookId": 1,
+--           "arabic": "كتاب الشهادات",
+--           "english": "Witnesses"
+--         },
+--         {
+--           "idInBook": 49,
+--           "bookId": 1,
+--           "arabic": "كتاب الصلح",
+--           "english": "Peacemaking"
+--         },
+--         {
+--           "idInBook": 50,
+--           "bookId": 1,
+--           "arabic": "كتاب الشروط",
+--           "english": "Conditions"
+--         },
+--         {
+--           "idInBook": 51,
+--           "bookId": 1,
+--           "arabic": "كتاب الوصايا",
+--           "english": "Wills and Testaments (Wasaayaa)"
+--         },
+--         {
+--           "idInBook": 52,
+--           "bookId": 1,
+--           "arabic": "كتاب الجهاد والسير",
+--           "english": "Fighting for the Cause of Allah (Jihaad)"
+--         },
+--         {
+--           "idInBook": 53,
+--           "bookId": 1,
+--           "arabic": "كتاب فرض الخمس",
+--           "english": "One-fifth of Booty to the Cause of Allah (Khumus)"
+--         },
+--         {
+--           "idInBook": 54,
+--           "bookId": 1,
+--           "arabic": "كتاب الجزية والموادعة",
+--           "english": "Jizyah and Mawaada'ah"
+--         },
+--         {
+--           "idInBook": 55,
+--           "bookId": 1,
+--           "arabic": "كتاب بدء الخلق",
+--           "english": "Beginning of Creation"
+--         },
+--         {
+--           "idInBook": 56,
+--           "bookId": 1,
+--           "arabic": "كتاب الحيض",
+--           "english": "Menstrual Periods"
+--         },
+--         {
+--           "idInBook": 57,
+--           "bookId": 1,
+--           "arabic": "كتاب أحاديث الأنبياء",
+--           "english": "Prophets"
+--         },
+--         {
+--           "idInBook": 58,
+--           "bookId": 1,
+--           "arabic": "كتاب المناقب",
+--           "english": "Virtues and Merits of the Prophet (pbuh) and his Companions"
+--         },
+--         {
+--           "idInBook": 59,
+--           "bookId": 1,
+--           "arabic": "كتاب فضائل أصحاب النبى صلى الله عليه وسلم",
+--           "english": "Companions of the Prophet"
+--         },
+--         {
+--           "idInBook": 60,
+--           "bookId": 1,
+--           "arabic": "كتاب مناقب الأنصار",
+--           "english": "Merits of the Helpers in Madinah (Ansaar)"
+--         },
+--         {
+--           "idInBook": 61,
+--           "bookId": 1,
+--           "arabic": "كتاب المغازى",
+--           "english": "Military Expeditions led by the Prophet (pbuh) (Al-Maghaazi)"
+--         },
+--         {
+--           "idInBook": 62,
+--           "bookId": 1,
+--           "arabic": "كتاب التفسير",
+--           "english": "Prophetic Commentary on the Qur'an (Tafseer of the Prophet (pbuh))"
+--         },
+--         {
+--           "idInBook": 63,
+--           "bookId": 1,
+--           "arabic": "كتاب فضائل القرآن",
+--           "english": "Virtues of the Qur'an"
+--         },
+--         {
+--           "idInBook": 64,
+--           "bookId": 1,
+--           "arabic": "كتاب النكاح",
+--           "english": "Wedlock, Marriage (Nikaah)"
+--         },
+--         {
+--           "idInBook": 65,
+--           "bookId": 1,
+--           "arabic": "كتاب الطلاق",
+--           "english": "Divorce"
+--         },
+--         {
+--           "idInBook": 66,
+--           "bookId": 1,
+--           "arabic": "كتاب النفقات",
+--           "english": "Supporting the Family"
+--         },
+--         {
+--           "idInBook": 67,
+--           "bookId": 1,
+--           "arabic": "كتاب التيمم",
+--           "english": "Rubbing hands and feet with dust (Tayammum)"
+--         },
+--         {
+--           "idInBook": 68,
+--           "bookId": 1,
+--           "arabic": "كتاب الأطعمة",
+--           "english": "Food, Meals"
+--         },
+--         {
+--           "idInBook": 69,
+--           "bookId": 1,
+--           "arabic": "كتاب العقيقة",
+--           "english": "Sacrifice on Occasion of Birth (`Aqiqa)"
+--         },
+--         {
+--           "idInBook": 70,
+--           "bookId": 1,
+--           "arabic": "كتاب الذبائح والصيد",
+--           "english": "Hunting, Slaughtering"
+--         },
+--         {
+--           "idInBook": 71,
+--           "bookId": 1,
+--           "arabic": "كتاب الأضاحي",
+--           "english": "Al-Adha Festival Sacrifice (Adaahi)"
+--         },
+--         {
+--           "idInBook": 72,
+--           "bookId": 1,
+--           "arabic": "كتاب الأشربة",
+--           "english": "Drinks"
+--         },
+--         {
+--           "idInBook": 73,
+--           "bookId": 1,
+--           "arabic": "كتاب المرضى",
+--           "english": "Patients"
+--         },
+--         {
+--           "idInBook": 74,
+--           "bookId": 1,
+--           "arabic": "كتاب الطب",
+--           "english": "Medicine"
+--         },
+--         {
+--           "idInBook": 75,
+--           "bookId": 1,
+--           "arabic": "كتاب اللباس",
+--           "english": "Dress"
+--         },
+--         {
+--           "idInBook": 76,
+--           "bookId": 1,
+--           "arabic": "كتاب الأدب",
+--           "english": "Good Manners and Form (Al-Adab)"
+--         },
+--         {
+--           "idInBook": 77,
+--           "bookId": 1,
+--           "arabic": "كتاب الاستئذان",
+--           "english": "Asking Permission"
+--         },
+--         {
+--           "idInBook": 78,
+--           "bookId": 1,
+--           "arabic": "كتاب الصلاة",
+--           "english": "Prayers (Salat)"
+--         },
+--         {
+--           "idInBook": 79,
+--           "bookId": 1,
+--           "arabic": "كتاب الدعوات",
+--           "english": "Invocations"
+--         },
+--         {
+--           "idInBook": 80,
+--           "bookId": 1,
+--           "arabic": "كتاب الرقاق",
+--           "english": "To make the Heart Tender (Ar-Riqaq)"
+--         },
+--         {
+--           "idInBook": 81,
+--           "bookId": 1,
+--           "arabic": "كتاب القدر",
+--           "english": "Divine Will (Al-Qadar)"
+--         },
+--         {
+--           "idInBook": 82,
+--           "bookId": 1,
+--           "arabic": "كتاب الأيمان والنذور",
+--           "english": "Oaths and Vows"
+--         },
+--         {
+--           "idInBook": 83,
+--           "bookId": 1,
+--           "arabic": "كتاب كفارات الأيمان",
+--           "english": "Expiation for Unfulfilled Oaths"
+--         },
+--         {
+--           "idInBook": 84,
+--           "bookId": 1,
+--           "arabic": "كتاب الفرائض",
+--           "english": "Laws of Inheritance (Al-Faraa'id)"
+--         },
+--         {
+--           "idInBook": 85,
+--           "bookId": 1,
+--           "arabic": "كتاب الحدود",
+--           "english": "Limits and Punishments set by Allah (Hudood)"
+--         },
+--         {
+--           "idInBook": 86,
+--           "bookId": 1,
+--           "arabic": "كتاب الديات",
+--           "english": "Blood Money (Ad-Diyat)"
+--         },
+--         {
+--           "idInBook": 87,
+--           "bookId": 1,
+--           "arabic": "كتاب استتابة المرتدين والمعاندين وقتالهم",
+--           "english": "Apostates"
+--         },
+--         {
+--           "idInBook": 88,
+--           "bookId": 1,
+--           "arabic": "كتاب الإكراه",
+--           "english": "(Statements made under) Coercion"
+--         },
+--         {
+--           "idInBook": 89,
+--           "bookId": 1,
+--           "arabic": "كتاب مواقيت الصلاة",
+--           "english": "Times of the Prayers"
+--         },
+--         {
+--           "idInBook": 90,
+--           "bookId": 1,
+--           "arabic": "كتاب الحيل",
+--           "english": "Tricks"
+--         },
+--         {
+--           "idInBook": 91,
+--           "bookId": 1,
+--           "arabic": "كتاب التعبير",
+--           "english": "Interpretation of Dreams"
+--         },
+--         {
+--           "idInBook": 92,
+--           "bookId": 1,
+--           "arabic": "كتاب الفتن",
+--           "english": "Afflictions and the End of the World"
+--         },
+--         {
+--           "idInBook": 93,
+--           "bookId": 1,
+--           "arabic": "كتاب الأحكام",
+--           "english": "Judgments (Ahkaam)"
+--         },
+--         {
+--           "idInBook": 94,
+--           "bookId": 1,
+--           "arabic": "كتاب التمنى",
+--           "english": "Wishes"
+--         },
+--         {
+--           "idInBook": 95,
+--           "bookId": 1,
+--           "arabic": "كتاب أخبار الآحاد",
+--           "english": "Accepting Information Given by a Truthful Person"
+--         },
+--         {
+--           "idInBook": 96,
+--           "bookId": 1,
+--           "arabic": "كتاب الاعتصام بالكتاب والسنة",
+--           "english": "Holding Fast to the Qur'an and Sunnah"
+--         },
+--         {
+--           "idInBook": 97,
+--           "bookId": 1,
+--           "arabic": "كتاب التوحيد",
+--           "english": "Oneness, Uniqueness of Allah (Tawheed)"
+--         },
+--         {
+--           "idInBook": 1,
+--           "bookId": 2,
+--           "arabic": "المقدمة",
+--           "english": "Introduction"
+--         },
+--         {
+--           "idInBook": 2,
+--           "bookId": 2,
+--           "arabic": "كتاب صلاة الاستسقاء‏",
+--           "english": "The Book of Prayer - Rain"
+--         },
+--         {
+--           "idInBook": 3,
+--           "bookId": 2,
+--           "arabic": "كتاب الكسوف",
+--           "english": "The Book of Prayer - Eclipses"
+--         },
+--         {
+--           "idInBook": 4,
+--           "bookId": 2,
+--           "arabic": "كتاب الجنائز",
+--           "english": "The Book of Prayer - Funerals"
+--         },
+--         {
+--           "idInBook": 5,
+--           "bookId": 2,
+--           "arabic": "كتاب الزكاة",
+--           "english": "The Book of Zakat"
+--         },
+--         {
+--           "idInBook": 6,
+--           "bookId": 2,
+--           "arabic": "كتاب الصيام",
+--           "english": "The Book of Fasting"
+--         },
+--         {
+--           "idInBook": 7,
+--           "bookId": 2,
+--           "arabic": "كتاب الاعتكاف",
+--           "english": "The Book of I'tikaf"
+--         },
+--         {
+--           "idInBook": 8,
+--           "bookId": 2,
+--           "arabic": "كتاب الحج",
+--           "english": "The Book of Pilgrimage"
+--         },
+--         {
+--           "idInBook": 9,
+--           "bookId": 2,
+--           "arabic": "كتاب النكاح",
+--           "english": "The Book of Marriage"
+--         },
+--         {
+--           "idInBook": 10,
+--           "bookId": 2,
+--           "arabic": "كتاب الرضاع",
+--           "english": "The Book of Suckling"
+--         },
+--         {
+--           "idInBook": 11,
+--           "bookId": 2,
+--           "arabic": "كتاب الطلاق",
+--           "english": "The Book of Divorce"
+--         },
+--         {
+--           "idInBook": 12,
+--           "bookId": 2,
+--           "arabic": "كتاب الإيمان",
+--           "english": "The Book of Faith"
+--         },
+--         {
+--           "idInBook": 13,
+--           "bookId": 2,
+--           "arabic": "كتاب اللعان",
+--           "english": "The Book of Invoking Curses"
+--         },
+--         {
+--           "idInBook": 14,
+--           "bookId": 2,
+--           "arabic": "كتاب العتق",
+--           "english": "The Book of Emancipating Slaves"
+--         },
+--         {
+--           "idInBook": 15,
+--           "bookId": 2,
+--           "arabic": "كتاب البيوع",
+--           "english": "The Book of Transactions"
+--         },
+--         {
+--           "idInBook": 16,
+--           "bookId": 2,
+--           "arabic": "كتاب المساقاة",
+--           "english": "The Book of Musaqah"
+--         },
+--         {
+--           "idInBook": 17,
+--           "bookId": 2,
+--           "arabic": "كتاب الفرائض",
+--           "english": "The Book of the Rules of Inheritance"
+--         },
+--         {
+--           "idInBook": 18,
+--           "bookId": 2,
+--           "arabic": "كتاب الهبات",
+--           "english": "The Book of Gifts"
+--         },
+--         {
+--           "idInBook": 19,
+--           "bookId": 2,
+--           "arabic": "كتاب الوصية",
+--           "english": "The Book of Wills"
+--         },
+--         {
+--           "idInBook": 20,
+--           "bookId": 2,
+--           "arabic": "كتاب النذر",
+--           "english": "The Book of Vows"
+--         },
+--         {
+--           "idInBook": 21,
+--           "bookId": 2,
+--           "arabic": "كتاب الأيمان",
+--           "english": "The Book of Oaths"
+--         },
+--         {
+--           "idInBook": 22,
+--           "bookId": 2,
+--           "arabic": "كتاب القسامة والمحاربين والقصاص والديات",
+--           "english": "The Book of Oaths, Muharibin, Qasas (Retaliation), and Diyat (Blood Money)"
+--         },
+--         {
+--           "idInBook": 23,
+--           "bookId": 2,
+--           "arabic": "كتاب الطهارة",
+--           "english": "The Book of Purification"
+--         },
+--         {
+--           "idInBook": 24,
+--           "bookId": 2,
+--           "arabic": "كتاب الحدود",
+--           "english": "The Book of Legal Punishments"
+--         },
+--         {
+--           "idInBook": 25,
+--           "bookId": 2,
+--           "arabic": "كتاب الأقضية",
+--           "english": "The Book of Judicial Decisions"
+--         },
+--         {
+--           "idInBook": 26,
+--           "bookId": 2,
+--           "arabic": "كتاب اللقطة",
+--           "english": "The Book of Lost Property"
+--         },
+--         {
+--           "idInBook": 27,
+--           "bookId": 2,
+--           "arabic": "كتاب الجهاد والسير",
+--           "english": "The Book of Jihad and Expeditions"
+--         },
+--         {
+--           "idInBook": 28,
+--           "bookId": 2,
+--           "arabic": "كتاب الإمارة",
+--           "english": "The Book on Government"
+--         },
+--         {
+--           "idInBook": 29,
+--           "bookId": 2,
+--           "arabic": "كتاب الصيد والذبائح وما يؤكل من الحيوان",
+--           "english": "The Book of Hunting, Slaughter, and what may be Eaten"
+--         },
+--         {
+--           "idInBook": 30,
+--           "bookId": 2,
+--           "arabic": "كتاب الأضاحى",
+--           "english": "The Book of Sacrifices"
+--         },
+--         {
+--           "idInBook": 31,
+--           "bookId": 2,
+--           "arabic": "كتاب الأشربة",
+--           "english": "The Book of Drinks"
+--         },
+--         {
+--           "idInBook": 32,
+--           "bookId": 2,
+--           "arabic": "كتاب اللباس والزينة",
+--           "english": "The Book of Clothes and Adornment"
+--         },
+--         {
+--           "idInBook": 33,
+--           "bookId": 2,
+--           "arabic": "كتاب الآداب",
+--           "english": "The Book of Manners and Etiquette"
+--         },
+--         {
+--           "idInBook": 34,
+--           "bookId": 2,
+--           "arabic": "كتاب الحيض",
+--           "english": "The Book of Menstruation"
+--         },
+--         {
+--           "idInBook": 35,
+--           "bookId": 2,
+--           "arabic": "كتاب السلام",
+--           "english": "The Book of Greetings"
+--         },
+--         {
+--           "idInBook": 36,
+--           "bookId": 2,
+--           "arabic": "كتاب الألفاظ من الأدب وغيرها",
+--           "english": "The Book Concerning the Use of Correct Words"
+--         },
+--         {
+--           "idInBook": 37,
+--           "bookId": 2,
+--           "arabic": "كتاب الشعر",
+--           "english": "The Book of Poetry"
+--         },
+--         {
+--           "idInBook": 38,
+--           "bookId": 2,
+--           "arabic": "كتاب الرؤيا",
+--           "english": "The Book of Dreams"
+--         },
+--         {
+--           "idInBook": 39,
+--           "bookId": 2,
+--           "arabic": "كتاب الفضائل",
+--           "english": "The Book of Virtues"
+--         },
+--         {
+--           "idInBook": 40,
+--           "bookId": 2,
+--           "arabic": "كتاب فضائل الصحابة رضى الله تعالى عنهم",
+--           "english": "The Book of the Merits of the Companions"
+--         },
+--         {
+--           "idInBook": 41,
+--           "bookId": 2,
+--           "arabic": "كتاب البر والصلة والآداب",
+--           "english": "The Book of Virtue, Enjoining Good Manners, and Joining of the Ties of Kinship"
+--         },
+--         {
+--           "idInBook": 42,
+--           "bookId": 2,
+--           "arabic": "كتاب القدر",
+--           "english": "The Book of Destiny"
+--         },
+--         {
+--           "idInBook": 43,
+--           "bookId": 2,
+--           "arabic": "كتاب العلم",
+--           "english": "The Book of Knowledge"
+--         },
+--         {
+--           "idInBook": 44,
+--           "bookId": 2,
+--           "arabic": "كتاب الذكر والدعاء والتوبة والاستغفار",
+--           "english": "The Book Pertaining to the Remembrance of Allah, Supplication, Repentance and Seeking Forgiveness"
+--         },
+--         {
+--           "idInBook": 45,
+--           "bookId": 2,
+--           "arabic": "كتاب الصلاة",
+--           "english": "The Book of Prayers"
+--         },
+--         {
+--           "idInBook": 46,
+--           "bookId": 2,
+--           "arabic": "كتاب الرقاق",
+--           "english": "The Book of Heart-Melting Traditions"
+--         },
+--         {
+--           "idInBook": 47,
+--           "bookId": 2,
+--           "arabic": "كتاب التوبة",
+--           "english": "The Book of Repentance"
+--         },
+--         {
+--           "idInBook": 48,
+--           "bookId": 2,
+--           "arabic": "كتاب صفات المنافقين وأحكامهم",
+--           "english": "Characteristics of The Hypocrites And Rulings Concerning Them"
+--         },
+--         {
+--           "idInBook": 49,
+--           "bookId": 2,
+--           "arabic": "كتاب صفة القيامة والجنة والنار",
+--           "english": "Characteristics of the Day of Judgment, Paradise, and Hell"
+--         },
+--         {
+--           "idInBook": 50,
+--           "bookId": 2,
+--           "arabic": "كتاب الجنة وصفة نعيمها وأهلها",
+--           "english": "The Book of Paradise, its Description, its Bounties and its Inhabitants"
+--         },
+--         {
+--           "idInBook": 51,
+--           "bookId": 2,
+--           "arabic": "كتاب الفتن وأشراط الساعة",
+--           "english": "The Book of Tribulations and Portents of the Last Hour"
+--         },
+--         {
+--           "idInBook": 52,
+--           "bookId": 2,
+--           "arabic": "كتاب الزهد والرقائق",
+--           "english": "The Book of Zuhd and Softening of Hearts"
+--         },
+--         {
+--           "idInBook": 53,
+--           "bookId": 2,
+--           "arabic": "كتاب التفسير",
+--           "english": "The Book of Commentary on the Qur'an"
+--         },
+--         {
+--           "idInBook": 54,
+--           "bookId": 2,
+--           "arabic": "كتاب الْمَسَاجِدِ وَمَوَاضِعِ الصَّلاَةِ",
+--           "english": "The Book of Mosques and Places of Prayer"
+--         },
+--         {
+--           "idInBook": 55,
+--           "bookId": 2,
+--           "arabic": "كتاب صلاة المسافرين وقصرها",
+--           "english": "The Book of Prayer - Travellers"
+--         },
+--         {
+--           "idInBook": 56,
+--           "bookId": 2,
+--           "arabic": "كتاب الجمعة",
+--           "english": "The Book of Prayer - Friday"
+--         },
+--         {
+--           "idInBook": 57,
+--           "bookId": 2,
+--           "arabic": "كتاب صلاة العيدين",
+--           "english": "The Book of Prayer - Two Eids"
+--         },
+--         {
+--           "idInBook": 1,
+--           "bookId": 3,
+--           "arabic": "كتاب الطهارة",
+--           "english": "The Book of Purification"
+--         },
+--         {
+--           "idInBook": 2,
+--           "bookId": 3,
+--           "arabic": "كتاب الإمامة",
+--           "english": "The Book of Leading the Prayer (Al-Imamah)"
+--         },
+--         {
+--           "idInBook": 3,
+--           "bookId": 3,
+--           "arabic": "كتاب الافتتاح",
+--           "english": "The Book of the Commencement of the Prayer"
+--         },
+--         {
+--           "idInBook": 4,
+--           "bookId": 3,
+--           "arabic": "كتاب التطبيق",
+--           "english": "The Book of The At-Tatbiq (Clasping One's Hands Together)"
+--         },
+--         {
+--           "idInBook": 5,
+--           "bookId": 3,
+--           "arabic": "كتاب السهو",
+--           "english": "The Book of Forgetfulness (In Prayer)"
+--         },
+--         {
+--           "idInBook": 6,
+--           "bookId": 3,
+--           "arabic": "كتاب الجمعة",
+--           "english": "The Book of Jumu'ah (Friday Prayer)"
+--         },
+--         {
+--           "idInBook": 7,
+--           "bookId": 3,
+--           "arabic": "كتاب تقصير الصلاة فى السفر",
+--           "english": "The Book of Shortening the Prayer When Traveling"
+--         },
+--         {
+--           "idInBook": 8,
+--           "bookId": 3,
+--           "arabic": "كتاب الكسوف",
+--           "english": "The Book of Eclipses"
+--         },
+--         {
+--           "idInBook": 9,
+--           "bookId": 3,
+--           "arabic": "كتاب الاستسقاء",
+--           "english": "The Book of Praying for Rain (Al-Istisqa')"
+--         },
+--         {
+--           "idInBook": 10,
+--           "bookId": 3,
+--           "arabic": "كتاب صلاة الخوف",
+--           "english": "The Book of the Fear Prayer"
+--         },
+--         {
+--           "idInBook": 11,
+--           "bookId": 3,
+--           "arabic": "كتاب صلاة العيدين",
+--           "english": "The Book of the Prayer for the Two 'Eids"
+--         },
+--         {
+--           "idInBook": 12,
+--           "bookId": 3,
+--           "arabic": "كتاب المياه",
+--           "english": "The Book of Water"
+--         },
+--         {
+--           "idInBook": 13,
+--           "bookId": 3,
+--           "arabic": "كتاب قيام الليل وتطوع النهار",
+--           "english": "The Book of Qiyam Al-Lail (The Night Prayer) and Voluntary Prayers During the Day"
+--         },
+--         {
+--           "idInBook": 14,
+--           "bookId": 3,
+--           "arabic": "كتاب الجنائز",
+--           "english": "The Book of Funerals"
+--         },
+--         {
+--           "idInBook": 15,
+--           "bookId": 3,
+--           "arabic": "كتاب الصيام",
+--           "english": "The Book of Fasting"
+--         },
+--         {
+--           "idInBook": 16,
+--           "bookId": 3,
+--           "arabic": "كتاب الزكاة",
+--           "english": "The Book of Zakah"
+--         },
+--         {
+--           "idInBook": 17,
+--           "bookId": 3,
+--           "arabic": "كتاب مناسك الحج",
+--           "english": "The Book of Hajj"
+--         },
+--         {
+--           "idInBook": 18,
+--           "bookId": 3,
+--           "arabic": "كتاب الجهاد",
+--           "english": "The Book of Jihad"
+--         },
+--         {
+--           "idInBook": 19,
+--           "bookId": 3,
+--           "arabic": "كتاب النكاح",
+--           "english": "The Book of Marriage"
+--         },
+--         {
+--           "idInBook": 20,
+--           "bookId": 3,
+--           "arabic": "كتاب الطلاق",
+--           "english": "The Book of Divorce"
+--         },
+--         {
+--           "idInBook": 21,
+--           "bookId": 3,
+--           "arabic": "كتاب الخيل",
+--           "english": "The Book of Horses, Races and Shooting"
+--         },
+--         {
+--           "idInBook": 22,
+--           "bookId": 3,
+--           "arabic": "كتاب الإحباس",
+--           "english": "The Book of Endowments"
+--         },
+--         {
+--           "idInBook": 23,
+--           "bookId": 3,
+--           "arabic": "كتاب الحيض والاستحاضة",
+--           "english": "The Book of Menstruation and Istihadah"
+--         },
+--         {
+--           "idInBook": 24,
+--           "bookId": 3,
+--           "arabic": "كتاب الوصايا",
+--           "english": "The Book of Wills"
+--         },
+--         {
+--           "idInBook": 25,
+--           "bookId": 3,
+--           "arabic": "كتاب النحل",
+--           "english": "The Book of Presents"
+--         },
+--         {
+--           "idInBook": 26,
+--           "bookId": 3,
+--           "arabic": "كتاب الهبة",
+--           "english": "The Book of Gifts"
+--         },
+--         {
+--           "idInBook": 27,
+--           "bookId": 3,
+--           "arabic": "كتاب الرقبى",
+--           "english": "The Book of ar-Ruqba"
+--         },
+--         {
+--           "idInBook": 28,
+--           "bookId": 3,
+--           "arabic": "كتاب العمرى",
+--           "english": "The Book of 'Umra"
+--         },
+--         {
+--           "idInBook": 29,
+--           "bookId": 3,
+--           "arabic": "كتاب الأيمان والنذور",
+--           "english": "The Book of Oaths and Vows"
+--         },
+--         {
+--           "idInBook": 30,
+--           "bookId": 3,
+--           "arabic": "كتاب المزارعة",
+--           "english": "The Book of Agriculture"
+--         },
+--         {
+--           "idInBook": 31,
+--           "bookId": 3,
+--           "arabic": "كتاب عشرة النساء",
+--           "english": "The Book of the Kind Treatment of Women"
+--         },
+--         {
+--           "idInBook": 32,
+--           "bookId": 3,
+--           "arabic": "كتاب تحريم الدم",
+--           "english": "The Book of Fighting [The Prohibition of Bloodshed]"
+--         },
+--         {
+--           "idInBook": 33,
+--           "bookId": 3,
+--           "arabic": "كتاب قسم الفىء",
+--           "english": "The Book of Distribution of Al-Fay'"
+--         },
+--         {
+--           "idInBook": 34,
+--           "bookId": 3,
+--           "arabic": "كتاب الغسل والتيمم",
+--           "english": "The Book of Ghusl and Tayammum"
+--         },
+--         {
+--           "idInBook": 35,
+--           "bookId": 3,
+--           "arabic": "كتاب البيعة",
+--           "english": "The Book of al-Bay'ah"
+--         },
+--         {
+--           "idInBook": 36,
+--           "bookId": 3,
+--           "arabic": "كتاب العقيقة",
+--           "english": "The Book of al-'Aqiqah"
+--         },
+--         {
+--           "idInBook": 37,
+--           "bookId": 3,
+--           "arabic": "كتاب الفرع والعتيرة",
+--           "english": "The Book of al-Fara' and al-'Atirah"
+--         },
+--         {
+--           "idInBook": 38,
+--           "bookId": 3,
+--           "arabic": "كتاب الصيد والذبائح",
+--           "english": "The Book of Hunting and Slaughtering"
+--         },
+--         {
+--           "idInBook": 39,
+--           "bookId": 3,
+--           "arabic": "كتاب الضحايا",
+--           "english": "The Book of ad-Dahaya (Sacrifices)"
+--         },
+--         {
+--           "idInBook": 40,
+--           "bookId": 3,
+--           "arabic": "كتاب البيوع",
+--           "english": "The Book of Financial Transactions"
+--         },
+--         {
+--           "idInBook": 41,
+--           "bookId": 3,
+--           "arabic": "كتاب القسامة",
+--           "english": "The Book of Oaths (qasamah), Retaliation and Blood Money"
+--         },
+--         {
+--           "idInBook": 42,
+--           "bookId": 3,
+--           "arabic": "كتاب قطع السارق",
+--           "english": "The Book of Cutting off the Hand of the Thief"
+--         },
+--         {
+--           "idInBook": 43,
+--           "bookId": 3,
+--           "arabic": "كتاب الإيمان وشرائعه",
+--           "english": "The Book Of Faith and its Signs"
+--         },
+--         {
+--           "idInBook": 44,
+--           "bookId": 3,
+--           "arabic": "كتاب الزينة من السنن",
+--           "english": "The Book of Adornment"
+--         },
+--         {
+--           "idInBook": 45,
+--           "bookId": 3,
+--           "arabic": "كتاب الصلاة",
+--           "english": "The Book of Salah"
+--         },
+--         {
+--           "idInBook": 46,
+--           "bookId": 3,
+--           "arabic": "كتاب آداب القضاة",
+--           "english": "The Book of the Etiquette of Judges"
+--         },
+--         {
+--           "idInBook": 47,
+--           "bookId": 3,
+--           "arabic": "كتاب الاستعاذة",
+--           "english": "The Book of Seeking Refuge with Allah"
+--         },
+--         {
+--           "idInBook": 48,
+--           "bookId": 3,
+--           "arabic": "كتاب الأشربة",
+--           "english": "The Book of Drinks"
+--         },
+--         {
+--           "idInBook": 49,
+--           "bookId": 3,
+--           "arabic": "كتاب المواقيت",
+--           "english": "The Book of the Times (of Prayer)"
+--         },
+--         {
+--           "idInBook": 50,
+--           "bookId": 3,
+--           "arabic": "كتاب الأذان",
+--           "english": "The Book of the Adhan (The Call to Prayer)"
+--         },
+--         {
+--           "idInBook": 51,
+--           "bookId": 3,
+--           "arabic": "كتاب المساجد",
+--           "english": "The Book of the Masjids"
+--         },
+--         {
+--           "idInBook": 52,
+--           "bookId": 3,
+--           "arabic": "كتاب القبلة",
+--           "english": "The Book of the Qiblah"
+--         },
+--         {
+--           "idInBook": 1,
+--           "bookId": 4,
+--           "arabic": "كتاب الطهارة",
+--           "english": "Purification (Kitab Al-Taharah)"
+--         },
+--         {
+--           "idInBook": 2,
+--           "bookId": 4,
+--           "arabic": "كتاب اللقطة",
+--           "english": "The Book of Lost and Found Items"
+--         },
+--         {
+--           "idInBook": 3,
+--           "bookId": 4,
+--           "arabic": "كتاب المناسك",
+--           "english": "The Rites of Hajj (Kitab Al-Manasik Wa'l-Hajj)"
+--         },
+--         {
+--           "idInBook": 4,
+--           "bookId": 4,
+--           "arabic": "كتاب النكاح",
+--           "english": "Marriage (Kitab Al-Nikah)"
+--         },
+--         {
+--           "idInBook": 5,
+--           "bookId": 4,
+--           "arabic": "كتاب الطلاق",
+--           "english": "Divorce (Kitab Al-Talaq)"
+--         },
+--         {
+--           "idInBook": 6,
+--           "bookId": 4,
+--           "arabic": "كتاب الصوم",
+--           "english": "Fasting (Kitab Al-Siyam)"
+--         },
+--         {
+--           "idInBook": 7,
+--           "bookId": 4,
+--           "arabic": "كتاب الجهاد",
+--           "english": "Jihad (Kitab Al-Jihad)"
+--         },
+--         {
+--           "idInBook": 8,
+--           "bookId": 4,
+--           "arabic": "كتاب الضحايا",
+--           "english": "Sacrifice (Kitab Al-Dahaya)"
+--         },
+--         {
+--           "idInBook": 9,
+--           "bookId": 4,
+--           "arabic": "كتاب الصيد",
+--           "english": "Game (Kitab Al-Said)"
+--         },
+--         {
+--           "idInBook": 10,
+--           "bookId": 4,
+--           "arabic": "كتاب الوصايا",
+--           "english": "Wills (Kitab Al-Wasaya)"
+--         },
+--         {
+--           "idInBook": 11,
+--           "bookId": 4,
+--           "arabic": "كتاب الفرائض",
+--           "english": "Shares of Inheritance (Kitab Al-Fara'id)"
+--         },
+--         {
+--           "idInBook": 12,
+--           "bookId": 4,
+--           "arabic": "كتاب الصلاة",
+--           "english": "Prayer (Kitab Al-Salat)"
+--         },
+--         {
+--           "idInBook": 13,
+--           "bookId": 4,
+--           "arabic": "كتاب الخراج والإمارة والفىء",
+--           "english": "Tribute, Spoils, and Rulership (Kitab Al-Kharaj, Wal-Fai' Wal-Imarah)"
+--         },
+--         {
+--           "idInBook": 14,
+--           "bookId": 4,
+--           "arabic": "كتاب الجنائز",
+--           "english": "Funerals (Kitab Al-Jana'iz)"
+--         },
+--         {
+--           "idInBook": 15,
+--           "bookId": 4,
+--           "arabic": "كتاب الأيمان والنذور",
+--           "english": "Oaths and Vows (Kitab Al-Aiman Wa Al-Nudhur)"
+--         },
+--         {
+--           "idInBook": 16,
+--           "bookId": 4,
+--           "arabic": "كتاب البيوع",
+--           "english": "Commercial Transactions (Kitab Al-Buyu)"
+--         },
+--         {
+--           "idInBook": 17,
+--           "bookId": 4,
+--           "arabic": "كتاب الإجارة",
+--           "english": "Wages (Kitab Al-Ijarah)"
+--         },
+--         {
+--           "idInBook": 18,
+--           "bookId": 4,
+--           "arabic": "كتاب الأقضية",
+--           "english": "The Office of the Judge (Kitab Al-Aqdiyah)"
+--         },
+--         {
+--           "idInBook": 19,
+--           "bookId": 4,
+--           "arabic": "كتاب العلم",
+--           "english": "Knowledge (Kitab Al-Ilm)"
+--         },
+--         {
+--           "idInBook": 20,
+--           "bookId": 4,
+--           "arabic": "كتاب الأشربة",
+--           "english": "Drinks (Kitab Al-Ashribah)"
+--         },
+--         {
+--           "idInBook": 21,
+--           "bookId": 4,
+--           "arabic": "كتاب الأطعمة",
+--           "english": "Foods (Kitab Al-At'imah)"
+--         },
+--         {
+--           "idInBook": 22,
+--           "bookId": 4,
+--           "arabic": "كتاب الطب",
+--           "english": "Medicine (Kitab Al-Tibb)"
+--         },
+--         {
+--           "idInBook": 23,
+--           "bookId": 4,
+--           "arabic": "كتاب الاستسقاء",
+--           "english": "The Book Of The Prayer For Rain (Kitab al-Istisqa')"
+--         },
+--         {
+--           "idInBook": 24,
+--           "bookId": 4,
+--           "arabic": "كتاب الكهانة و التطير",
+--           "english": "Divination and Omens (Kitab Al-Kahanah Wa Al-Tatayyur)"
+--         },
+--         {
+--           "idInBook": 25,
+--           "bookId": 4,
+--           "arabic": "كتاب العتق",
+--           "english": "The Book of Manumission of Slaves"
+--         },
+--         {
+--           "idInBook": 26,
+--           "bookId": 4,
+--           "arabic": "كتاب الحروف والقراءات",
+--           "english": "Dialects and Readings of the Qur'an (Kitab Al-Huruf Wa Al-Qira'at)"
+--         },
+--         {
+--           "idInBook": 27,
+--           "bookId": 4,
+--           "arabic": "كتاب الحمَّام",
+--           "english": "Hot Baths (Kitab Al-Hammam)"
+--         },
+--         {
+--           "idInBook": 28,
+--           "bookId": 4,
+--           "arabic": "كتاب اللباس",
+--           "english": "Clothing (Kitab Al-Libas)"
+--         },
+--         {
+--           "idInBook": 29,
+--           "bookId": 4,
+--           "arabic": "كتاب الترجل",
+--           "english": "Combing the Hair (Kitab Al-Tarajjul)"
+--         },
+--         {
+--           "idInBook": 30,
+--           "bookId": 4,
+--           "arabic": "كتاب الخاتم",
+--           "english": "Signet-Rings (Kitab Al-Khatam)"
+--         },
+--         {
+--           "idInBook": 31,
+--           "bookId": 4,
+--           "arabic": "كتاب الفتن والملاحم",
+--           "english": "Trials and Fierce Battles (Kitab Al-Fitan Wa Al-Malahim)"
+--         },
+--         {
+--           "idInBook": 32,
+--           "bookId": 4,
+--           "arabic": "كتاب المهدى",
+--           "english": "The Promised Deliverer (Kitab Al-Mahdi)"
+--         },
+--         {
+--           "idInBook": 33,
+--           "bookId": 4,
+--           "arabic": "كتاب الملاحم",
+--           "english": "Battles (Kitab Al-Malahim)"
+--         },
+--         {
+--           "idInBook": 34,
+--           "bookId": 4,
+--           "arabic": "كتاب صلاة السفر",
+--           "english": "Prayer (Kitab Al-Salat): Detailed Rules of Law about the Prayer during Journey"
+--         },
+--         {
+--           "idInBook": 35,
+--           "bookId": 4,
+--           "arabic": "كتاب الحدود",
+--           "english": "Prescribed Punishments (Kitab Al-Hudud)"
+--         },
+--         {
+--           "idInBook": 36,
+--           "bookId": 4,
+--           "arabic": "كتاب الديات",
+--           "english": "Types of Blood-Wit (Kitab Al-Diyat)"
+--         },
+--         {
+--           "idInBook": 37,
+--           "bookId": 4,
+--           "arabic": "كتاب السنة",
+--           "english": "Model Behavior of the Prophet (Kitab Al-Sunnah)"
+--         },
+--         {
+--           "idInBook": 38,
+--           "bookId": 4,
+--           "arabic": "كتاب الأدب",
+--           "english": "General Behavior (Kitab Al-Adab)"
+--         },
+--         {
+--           "idInBook": 39,
+--           "bookId": 4,
+--           "arabic": "كتاب التطوع",
+--           "english": "Prayer (Kitab Al-Salat): Voluntary Prayers"
+--         },
+--         {
+--           "idInBook": 40,
+--           "bookId": 4,
+--           "arabic": "كتاب شهر رمضان",
+--           "english": "Prayer (Kitab Al-Salat): Detailed Injunctions about Ramadan"
+--         },
+--         {
+--           "idInBook": 41,
+--           "bookId": 4,
+--           "arabic": "كتاب سجود القرآن",
+--           "english": "Prayer (Kitab Al-Salat): Prostration while reciting the Qur'an"
+--         },
+--         {
+--           "idInBook": 42,
+--           "bookId": 4,
+--           "arabic": "كتاب الوتر",
+--           "english": "Prayer (Kitab Al-Salat): Detailed Injunctions about Witr"
+--         },
+--         {
+--           "idInBook": 43,
+--           "bookId": 4,
+--           "arabic": "كتاب الزكاة",
+--           "english": "Zakat (Kitab Al-Zakat)"
+--         },
+--         {
+--           "idInBook": 1,
+--           "bookId": 5,
+--           "arabic": "كتاب الطهارة عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Purification"
+--         },
+--         {
+--           "idInBook": 2,
+--           "bookId": 5,
+--           "arabic": "كتاب الجنائز عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Jana''iz (Funerals)"
+--         },
+--         {
+--           "idInBook": 3,
+--           "bookId": 5,
+--           "arabic": "كتاب النكاح عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Marriage"
+--         },
+--         {
+--           "idInBook": 4,
+--           "bookId": 5,
+--           "arabic": "كتاب الرضاع",
+--           "english": "The Book on Suckling"
+--         },
+--         {
+--           "idInBook": 5,
+--           "bookId": 5,
+--           "arabic": "كتاب الطلاق واللعان عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Divorce and Li'an"
+--         },
+--         {
+--           "idInBook": 6,
+--           "bookId": 5,
+--           "arabic": "كتاب البيوع عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Business"
+--         },
+--         {
+--           "idInBook": 7,
+--           "bookId": 5,
+--           "arabic": "كتاب الأحكام عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Chapters On Judgements From The Messenger of Allah"
+--         },
+--         {
+--           "idInBook": 8,
+--           "bookId": 5,
+--           "arabic": "كتاب الديات عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Blood Money"
+--         },
+--         {
+--           "idInBook": 9,
+--           "bookId": 5,
+--           "arabic": "كتاب الحدود عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Legal Punishments (Al-Hudud)"
+--         },
+--         {
+--           "idInBook": 10,
+--           "bookId": 5,
+--           "arabic": "كتاب الصيد والذبائح عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Hunting"
+--         },
+--         {
+--           "idInBook": 11,
+--           "bookId": 5,
+--           "arabic": "كتاب الأضاحى عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Sacrifices"
+--         },
+--         {
+--           "idInBook": 12,
+--           "bookId": 5,
+--           "arabic": "كتاب الصلاة",
+--           "english": "The Book on Salat (Prayer)"
+--         },
+--         {
+--           "idInBook": 13,
+--           "bookId": 5,
+--           "arabic": "كتاب النذور والأيمان عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Vows and Oaths"
+--         },
+--         {
+--           "idInBook": 14,
+--           "bookId": 5,
+--           "arabic": "كتاب السير عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Military Expeditions"
+--         },
+--         {
+--           "idInBook": 15,
+--           "bookId": 5,
+--           "arabic": "كتاب فضائل الجهاد عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Virtues of Jihad"
+--         },
+--         {
+--           "idInBook": 16,
+--           "bookId": 5,
+--           "arabic": "كتاب الجهاد عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Jihad"
+--         },
+--         {
+--           "idInBook": 17,
+--           "bookId": 5,
+--           "arabic": "كتاب اللباس",
+--           "english": "The Book on Clothing"
+--         },
+--         {
+--           "idInBook": 18,
+--           "bookId": 5,
+--           "arabic": "كتاب الأطعمة عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Food"
+--         },
+--         {
+--           "idInBook": 19,
+--           "bookId": 5,
+--           "arabic": "كتاب الأشربة عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Drinks"
+--         },
+--         {
+--           "idInBook": 20,
+--           "bookId": 5,
+--           "arabic": "كتاب البر والصلة عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters on Righteousness And Maintaining Good Relations With Relatives"
+--         },
+--         {
+--           "idInBook": 21,
+--           "bookId": 5,
+--           "arabic": "كتاب الطب عن رسول اللَّهِ صلى الله عليه وسلم",
+--           "english": "Chapters on Medicine"
+--         },
+--         {
+--           "idInBook": 22,
+--           "bookId": 5,
+--           "arabic": "كتاب الفرائض عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters On Inheritance"
+--         },
+--         {
+--           "idInBook": 23,
+--           "bookId": 5,
+--           "arabic": "أَبْوَابُ الْوِتْرِ",
+--           "english": "The Book on Al-Witr"
+--         },
+--         {
+--           "idInBook": 24,
+--           "bookId": 5,
+--           "arabic": "كتاب الوصايا عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters On Wasaya (Wills and Testament)"
+--         },
+--         {
+--           "idInBook": 25,
+--           "bookId": 5,
+--           "arabic": "كتاب الولاء والهبة عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters On Wala' And Gifts"
+--         },
+--         {
+--           "idInBook": 26,
+--           "bookId": 5,
+--           "arabic": "كتاب القدر عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters On Al-Qadar"
+--         },
+--         {
+--           "idInBook": 27,
+--           "bookId": 5,
+--           "arabic": "كتاب الفتن عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters On Al-Fitan"
+--         },
+--         {
+--           "idInBook": 28,
+--           "bookId": 5,
+--           "arabic": "كتاب الرؤيا عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters On Dreams"
+--         },
+--         {
+--           "idInBook": 29,
+--           "bookId": 5,
+--           "arabic": "كتاب الشهادات عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters On Witnesses"
+--         },
+--         {
+--           "idInBook": 30,
+--           "bookId": 5,
+--           "arabic": "كتاب الزهد عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters On Zuhd"
+--         },
+--         {
+--           "idInBook": 31,
+--           "bookId": 5,
+--           "arabic": "كتاب صفة القيامة والرقائق والورع عن رسول الله صلى الله",
+--           "english": "Chapters on the description of the Day of Judgement, Ar-Riqaq, and Al-Wara'"
+--         },
+--         {
+--           "idInBook": 32,
+--           "bookId": 5,
+--           "arabic": "كتاب صفة الجنة عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters on the description of Paradise"
+--         },
+--         {
+--           "idInBook": 33,
+--           "bookId": 5,
+--           "arabic": "كتاب صفة جهنم عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on the Description of Hellfire"
+--         },
+--         {
+--           "idInBook": 34,
+--           "bookId": 5,
+--           "arabic": "كِتَاب الْجُمُعَةِ عَنْ رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ",
+--           "english": "The Book on the Day of Friday"
+--         },
+--         {
+--           "idInBook": 35,
+--           "bookId": 5,
+--           "arabic": "كتاب الإيمان عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Faith"
+--         },
+--         {
+--           "idInBook": 36,
+--           "bookId": 5,
+--           "arabic": "كتاب العلم عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters on Knowledge"
+--         },
+--         {
+--           "idInBook": 37,
+--           "bookId": 5,
+--           "arabic": "كتاب الاستئذان والآداب عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters on Seeking Permission"
+--         },
+--         {
+--           "idInBook": 38,
+--           "bookId": 5,
+--           "arabic": "كتاب الأدب عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters on Manners"
+--         },
+--         {
+--           "idInBook": 39,
+--           "bookId": 5,
+--           "arabic": "كتاب الأمثال عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters on Parables"
+--         },
+--         {
+--           "idInBook": 40,
+--           "bookId": 5,
+--           "arabic": "كتاب ثواب القرآن عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters on The Virtues of the Qur'an"
+--         },
+--         {
+--           "idInBook": 41,
+--           "bookId": 5,
+--           "arabic": "كتاب القراءات عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters on Recitation"
+--         },
+--         {
+--           "idInBook": 42,
+--           "bookId": 5,
+--           "arabic": "كتاب تفسير القرآن عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters on Tafsir"
+--         },
+--         {
+--           "idInBook": 43,
+--           "bookId": 5,
+--           "arabic": "كتاب الدعوات عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters on Supplication"
+--         },
+--         {
+--           "idInBook": 44,
+--           "bookId": 5,
+--           "arabic": "كتاب المناقب عن رسول الله صلى الله عليه وسلم",
+--           "english": "Chapters on Virtues"
+--         },
+--         {
+--           "idInBook": 45,
+--           "bookId": 5,
+--           "arabic": "أَبْوَابُ الْعِيدَيْنِ عَنْ رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ",
+--           "english": "The Book on the Two Eids"
+--         },
+--         {
+--           "idInBook": 46,
+--           "bookId": 5,
+--           "arabic": "أَبْوَابُ السَّفَرِ",
+--           "english": "The Book on Traveling"
+--         },
+--         {
+--           "idInBook": 47,
+--           "bookId": 5,
+--           "arabic": "كتاب الزكاة عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Zakat"
+--         },
+--         {
+--           "idInBook": 48,
+--           "bookId": 5,
+--           "arabic": "كتاب الصوم عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Fasting"
+--         },
+--         {
+--           "idInBook": 49,
+--           "bookId": 5,
+--           "arabic": "كتاب الحج عن رسول الله صلى الله عليه وسلم",
+--           "english": "The Book on Hajj"
+--         },
+--         {
+--           "idInBook": 1,
+--           "bookId": 6,
+--           "arabic": "كتاب المقدمة",
+--           "english": "The Book of the Sunnah"
+--         },
+--         {
+--           "idInBook": 2,
+--           "bookId": 6,
+--           "arabic": "كتاب النكاح",
+--           "english": "The Chapters on Marriage"
+--         },
+--         {
+--           "idInBook": 3,
+--           "bookId": 6,
+--           "arabic": "كتاب الطلاق",
+--           "english": "The Chapters on Divorce"
+--         },
+--         {
+--           "idInBook": 4,
+--           "bookId": 6,
+--           "arabic": "كتاب الكفارات",
+--           "english": "The Chapters on Expiation"
+--         },
+--         {
+--           "idInBook": 5,
+--           "bookId": 6,
+--           "arabic": "كتاب التجارات",
+--           "english": "The Chapters on Business Transactions"
+--         },
+--         {
+--           "idInBook": 6,
+--           "bookId": 6,
+--           "arabic": "كتاب الأحكام",
+--           "english": "The Chapters on Rulings"
+--         },
+--         {
+--           "idInBook": 7,
+--           "bookId": 6,
+--           "arabic": "كتاب الهبات",
+--           "english": "The Chapters on Gifts"
+--         },
+--         {
+--           "idInBook": 8,
+--           "bookId": 6,
+--           "arabic": "كتاب الصدقات",
+--           "english": "The Chapters on Charity"
+--         },
+--         {
+--           "idInBook": 9,
+--           "bookId": 6,
+--           "arabic": "كتاب الرهون",
+--           "english": "The Chapters on Pawning"
+--         },
+--         {
+--           "idInBook": 10,
+--           "bookId": 6,
+--           "arabic": "كتاب الشفعة",
+--           "english": "The Chapters on Pre-emption"
+--         },
+--         {
+--           "idInBook": 11,
+--           "bookId": 6,
+--           "arabic": "كتاب اللقطة",
+--           "english": "The Chapters on Lost Property"
+--         },
+--         {
+--           "idInBook": 12,
+--           "bookId": 6,
+--           "arabic": "كتاب الطهارة وسننها",
+--           "english": "The Book of Purification and its Sunnah"
+--         },
+--         {
+--           "idInBook": 13,
+--           "bookId": 6,
+--           "arabic": "كتاب العتق",
+--           "english": "The Chapters on Manumission (of Slaves)"
+--         },
+--         {
+--           "idInBook": 14,
+--           "bookId": 6,
+--           "arabic": "كتاب الحدود",
+--           "english": "The Chapters on Legal Punishments"
+--         },
+--         {
+--           "idInBook": 15,
+--           "bookId": 6,
+--           "arabic": "كتاب الديات",
+--           "english": "The Chapters on Blood Money"
+--         },
+--         {
+--           "idInBook": 16,
+--           "bookId": 6,
+--           "arabic": "كتاب الوصايا",
+--           "english": "The Chapters on Wills"
+--         },
+--         {
+--           "idInBook": 17,
+--           "bookId": 6,
+--           "arabic": "كتاب الفرائض",
+--           "english": "Chapters on Shares of Inheritance"
+--         },
+--         {
+--           "idInBook": 18,
+--           "bookId": 6,
+--           "arabic": "كتاب الجهاد",
+--           "english": "The Chapters on Jihad"
+--         },
+--         {
+--           "idInBook": 19,
+--           "bookId": 6,
+--           "arabic": "كتاب المناسك",
+--           "english": "Chapters on Hajj Rituals"
+--         },
+--         {
+--           "idInBook": 20,
+--           "bookId": 6,
+--           "arabic": "كتاب الأضاحي",
+--           "english": "Chapters on Sacrifices"
+--         },
+--         {
+--           "idInBook": 21,
+--           "bookId": 6,
+--           "arabic": "كتاب الذبائح",
+--           "english": "Chapters on Slaughtering"
+--         },
+--         {
+--           "idInBook": 22,
+--           "bookId": 6,
+--           "arabic": "كتاب الصيد",
+--           "english": "Chapters on Hunting"
+--         },
+--         {
+--           "idInBook": 23,
+--           "bookId": 6,
+--           "arabic": "كتاب الصلاة",
+--           "english": "The Book of the Prayer"
+--         },
+--         {
+--           "idInBook": 24,
+--           "bookId": 6,
+--           "arabic": "كتاب الأطعمة",
+--           "english": "Chapters on Food"
+--         },
+--         {
+--           "idInBook": 25,
+--           "bookId": 6,
+--           "arabic": "كتاب الأشربة",
+--           "english": "Chapters on Drinks"
+--         },
+--         {
+--           "idInBook": 26,
+--           "bookId": 6,
+--           "arabic": "كتاب الطب",
+--           "english": "Chapters on Medicine"
+--         },
+--         {
+--           "idInBook": 27,
+--           "bookId": 6,
+--           "arabic": "كتاب اللباس",
+--           "english": "Chapters on Dress"
+--         },
+--         {
+--           "idInBook": 28,
+--           "bookId": 6,
+--           "arabic": "كتاب الأدب",
+--           "english": "Etiquette"
+--         },
+--         {
+--           "idInBook": 29,
+--           "bookId": 6,
+--           "arabic": "كتاب الدعاء",
+--           "english": "Supplication"
+--         },
+--         {
+--           "idInBook": 30,
+--           "bookId": 6,
+--           "arabic": "كتاب تعبير الرؤيا",
+--           "english": "Interpretation of Dreams"
+--         },
+--         {
+--           "idInBook": 31,
+--           "bookId": 6,
+--           "arabic": "كتاب الفتن",
+--           "english": "Tribulations"
+--         },
+--         {
+--           "idInBook": 32,
+--           "bookId": 6,
+--           "arabic": "كتاب الزهد",
+--           "english": "Zuhd"
+--         },
+--         {
+--           "idInBook": 33,
+--           "bookId": 6,
+--           "arabic": "كتاب الأذان والسنة فيها",
+--           "english": "The Book of the Adhan and the Sunnah Regarding It"
+--         },
+--         {
+--           "idInBook": 34,
+--           "bookId": 6,
+--           "arabic": "كتاب المساجد والجماعات",
+--           "english": "The Book On The Mosques And The Congregations"
+--         },
+--         {
+--           "idInBook": 35,
+--           "bookId": 6,
+--           "arabic": "كتاب إقامة الصلاة والسنة فيها",
+--           "english": "Establishing the Prayer and the Sunnah Regarding Them"
+--         },
+--         {
+--           "idInBook": 36,
+--           "bookId": 6,
+--           "arabic": "كتاب الجنائز",
+--           "english": "Chapters Regarding Funerals"
+--         },
+--         {
+--           "idInBook": 37,
+--           "bookId": 6,
+--           "arabic": "كتاب الصيام",
+--           "english": "Fasting"
+--         },
+--         {
+--           "idInBook": 38,
+--           "bookId": 6,
+--           "arabic": "كتاب الزكاة",
+--           "english": "The Chapters Regarding Zakat"
+--         },
+--         {
+--           "idInBook": 1,
+--           "bookId": 7,
+--           "arabic": "كتاب وقوت الصلاة",
+--           "english": "The Times of Prayer"
+--         },
+--         {
+--           "idInBook": 2,
+--           "bookId": 7,
+--           "arabic": "كتاب العيدين",
+--           "english": "The Two 'Ids"
+--         },
+--         {
+--           "idInBook": 3,
+--           "bookId": 7,
+--           "arabic": "كتاب صلاة الخوف",
+--           "english": "The Fear Prayer"
+--         },
+--         {
+--           "idInBook": 4,
+--           "bookId": 7,
+--           "arabic": "كتاب صلاة الكسوف",
+--           "english": "The Eclipse Prayer"
+--         },
+--         {
+--           "idInBook": 5,
+--           "bookId": 7,
+--           "arabic": "كتاب الاستسقاء",
+--           "english": "Asking for Rain"
+--         },
+--         {
+--           "idInBook": 6,
+--           "bookId": 7,
+--           "arabic": "كتاب القبلة",
+--           "english": "The Qibla"
+--         },
+--         {
+--           "idInBook": 7,
+--           "bookId": 7,
+--           "arabic": "كتاب القرآن",
+--           "english": "The Qur'an"
+--         },
+--         {
+--           "idInBook": 8,
+--           "bookId": 7,
+--           "arabic": "كتاب الجنائز",
+--           "english": "Burials"
+--         },
+--         {
+--           "idInBook": 9,
+--           "bookId": 7,
+--           "arabic": "كتاب الزكاة",
+--           "english": "Zakat"
+--         },
+--         {
+--           "idInBook": 10,
+--           "bookId": 7,
+--           "arabic": "كتاب الصيام",
+--           "english": "Fasting"
+--         },
+--         {
+--           "idInBook": 11,
+--           "bookId": 7,
+--           "arabic": "كتاب الاعتكاف",
+--           "english": "I'tikaf in Ramadan"
+--         },
+--         {
+--           "idInBook": 12,
+--           "bookId": 7,
+--           "arabic": "كتاب الطهارة",
+--           "english": "Purity"
+--         },
+--         {
+--           "idInBook": 13,
+--           "bookId": 7,
+--           "arabic": "كتاب الحج",
+--           "english": "Hajj"
+--         },
+--         {
+--           "idInBook": 14,
+--           "bookId": 7,
+--           "arabic": "كتاب الجهاد",
+--           "english": "Jihad"
+--         },
+--         {
+--           "idInBook": 15,
+--           "bookId": 7,
+--           "arabic": "كتاب النذور والأيمان",
+--           "english": "Vows and Oaths"
+--         },
+--         {
+--           "idInBook": 16,
+--           "bookId": 7,
+--           "arabic": "كتاب الضحايا",
+--           "english": "Sacrificial Animals"
+--         },
+--         {
+--           "idInBook": 17,
+--           "bookId": 7,
+--           "arabic": "كتاب الذبائح",
+--           "english": "Slaughtering Animals"
+--         },
+--         {
+--           "idInBook": 18,
+--           "bookId": 7,
+--           "arabic": "كتاب الصيد",
+--           "english": "Game"
+--         },
+--         {
+--           "idInBook": 19,
+--           "bookId": 7,
+--           "arabic": "كتاب العقيقة",
+--           "english": "The 'Aqiqa"
+--         },
+--         {
+--           "idInBook": 20,
+--           "bookId": 7,
+--           "arabic": "كتاب الفرائض",
+--           "english": "Fara'id"
+--         },
+--         {
+--           "idInBook": 21,
+--           "bookId": 7,
+--           "arabic": "كتاب النكاح",
+--           "english": "Marriage"
+--         },
+--         {
+--           "idInBook": 22,
+--           "bookId": 7,
+--           "arabic": "كتاب الطلاق",
+--           "english": "Divorce"
+--         },
+--         {
+--           "idInBook": 23,
+--           "bookId": 7,
+--           "arabic": "كتاب الصلاة",
+--           "english": "Prayer"
+--         },
+--         {
+--           "idInBook": 24,
+--           "bookId": 7,
+--           "arabic": "كتاب الرضاع",
+--           "english": "Suckling"
+--         },
+--         {
+--           "idInBook": 25,
+--           "bookId": 7,
+--           "arabic": "كتاب البيوع",
+--           "english": "Business Transactions"
+--         },
+--         {
+--           "idInBook": 26,
+--           "bookId": 7,
+--           "arabic": "كتاب القراض",
+--           "english": "Qirad"
+--         },
+--         {
+--           "idInBook": 27,
+--           "bookId": 7,
+--           "arabic": "كتاب المساقاة",
+--           "english": "Sharecropping"
+--         },
+--         {
+--           "idInBook": 28,
+--           "bookId": 7,
+--           "arabic": "كتاب كراء الأرض",
+--           "english": "Renting Land"
+--         },
+--         {
+--           "idInBook": 29,
+--           "bookId": 7,
+--           "arabic": "كتاب الشفعة",
+--           "english": "Pre-emption in Property"
+--         },
+--         {
+--           "idInBook": 30,
+--           "bookId": 7,
+--           "arabic": "كتاب الأقضية",
+--           "english": "Judgements"
+--         },
+--         {
+--           "idInBook": 31,
+--           "bookId": 7,
+--           "arabic": "كتاب الوصية",
+--           "english": "Wills and Testaments"
+--         },
+--         {
+--           "idInBook": 32,
+--           "bookId": 7,
+--           "arabic": "كتاب العتق والولاء",
+--           "english": "Setting Free and Wala'"
+--         },
+--         {
+--           "idInBook": 33,
+--           "bookId": 7,
+--           "arabic": "كتاب المكاتب",
+--           "english": "The Mukatab"
+--         },
+--         {
+--           "idInBook": 34,
+--           "bookId": 7,
+--           "arabic": "كتاب السهو",
+--           "english": "Forgetfulness in Prayer"
+--         },
+--         {
+--           "idInBook": 35,
+--           "bookId": 7,
+--           "arabic": "كتاب المدبر",
+--           "english": "The Mudabbar"
+--         },
+--         {
+--           "idInBook": 36,
+--           "bookId": 7,
+--           "arabic": "كتاب الحدود",
+--           "english": "Hudud"
+--         },
+--         {
+--           "idInBook": 37,
+--           "bookId": 7,
+--           "arabic": "كتاب الأشربة",
+--           "english": "Drinks"
+--         },
+--         {
+--           "idInBook": 38,
+--           "bookId": 7,
+--           "arabic": "كتاب العقول",
+--           "english": "Blood-Money"
+--         },
+--         {
+--           "idInBook": 39,
+--           "bookId": 7,
+--           "arabic": "كتاب القسامة",
+--           "english": "The Oath of Qasama"
+--         },
+--         {
+--           "idInBook": 40,
+--           "bookId": 7,
+--           "arabic": "كتاب الْمَدِينَةِ",
+--           "english": "Madina"
+--         },
+--         {
+--           "idInBook": 41,
+--           "bookId": 7,
+--           "arabic": "كتاب القدر",
+--           "english": "The Decree"
+--         },
+--         {
+--           "idInBook": 42,
+--           "bookId": 7,
+--           "arabic": "كتاب حسن الخلق",
+--           "english": "Good Character"
+--         },
+--         {
+--           "idInBook": 43,
+--           "bookId": 7,
+--           "arabic": "كتاب اللباس",
+--           "english": "Dress"
+--         },
+--         {
+--           "idInBook": 44,
+--           "bookId": 7,
+--           "arabic": "كتاب صفة النبى صلى الله عليه وسلم",
+--           "english": "The Description of the Prophet, may Allah Bless Him and Grant Him Peace"
+--         },
+--         {
+--           "idInBook": 45,
+--           "bookId": 7,
+--           "arabic": "كتاب الجمعة",
+--           "english": "Jumu'a"
+--         },
+--         {
+--           "idInBook": 46,
+--           "bookId": 7,
+--           "arabic": "كتاب العين",
+--           "english": "The Evil Eye"
+--         },
+--         {
+--           "idInBook": 47,
+--           "bookId": 7,
+--           "arabic": "كتاب الشعر",
+--           "english": "Hair"
+--         },
+--         {
+--           "idInBook": 48,
+--           "bookId": 7,
+--           "arabic": "كتاب الرؤيا",
+--           "english": "Visions"
+--         },
+--         {
+--           "idInBook": 49,
+--           "bookId": 7,
+--           "arabic": "كتاب السلام",
+--           "english": "Greetings"
+--         },
+--         {
+--           "idInBook": 50,
+--           "bookId": 7,
+--           "arabic": "كتاب الاستئذان",
+--           "english": "General Subjects"
+--         },
+--         {
+--           "idInBook": 51,
+--           "bookId": 7,
+--           "arabic": "كتاب البيعة",
+--           "english": "The Oath of Allegiance"
+--         },
+--         {
+--           "idInBook": 52,
+--           "bookId": 7,
+--           "arabic": "كتاب الكلام",
+--           "english": "Speech"
+--         },
+--         {
+--           "idInBook": 53,
+--           "bookId": 7,
+--           "arabic": "كتاب جهنم",
+--           "english": "Jahannam"
+--         },
+--         {
+--           "idInBook": 54,
+--           "bookId": 7,
+--           "arabic": "كتاب الصدقة",
+--           "english": "Sadaqa"
+--         },
+--         {
+--           "idInBook": 55,
+--           "bookId": 7,
+--           "arabic": "كتاب العلم",
+--           "english": "Knowledge"
+--         },
+--         {
+--           "idInBook": 56,
+--           "bookId": 7,
+--           "arabic": "كتاب الصلاة فى رمضان",
+--           "english": "Prayer in Ramadan"
+--         },
+--         {
+--           "idInBook": 57,
+--           "bookId": 7,
+--           "arabic": "كتاب دعوة المظلوم",
+--           "english": "The Supplication of the Unjustly Wronged"
+--         },
+--         {
+--           "idInBook": 58,
+--           "bookId": 7,
+--           "arabic": "كتاب أسماء النبى صلى الله عليه وسلم",
+--           "english": "The Names of the Prophet, may Allah Bless Him and Grant Him Peace"
+--         },
+--         {
+--           "idInBook": 59,
+--           "bookId": 7,
+--           "arabic": "كتاب صلاة الليل",
+--           "english": "Tahajjud"
+--         },
+--         {
+--           "idInBook": 60,
+--           "bookId": 7,
+--           "arabic": "كتاب صلاة الجماعة",
+--           "english": "Prayer in Congregation"
+--         },
+--         {
+--           "idInBook": 61,
+--           "bookId": 7,
+--           "arabic": "كتاب قصر الصلاة فى السفر",
+--           "english": "Shortening the Prayer"
+--         },
+--         {
+--           "idInBook": 1,
+--           "bookId": 8,
+--           "arabic": "مُسْنَدُ أَبِي بَكْرٍ الصِّدِّيقِ رَضِيَ اللَّهُ عَنْهُ",
+--           "english": "Musnad Abu Bakr as-Siddiq (ra)"
+--         },
+--         {
+--           "idInBook": 2,
+--           "bookId": 8,
+--           "arabic": "مُسْنَدِ عُمَرَ بْنِ الْخَطَّابِ رَضِيَ اللَّهُ عَنْهُ",
+--           "english": "Musnad `Umar b. al-Khattab (ra)"
+--         },
+--         {
+--           "idInBook": 3,
+--           "bookId": 8,
+--           "arabic": "حَدِيثُ السَّقِيفَةِ",
+--           "english": "The Hadeeth of Saqeefah"
+--         },
+--         {
+--           "idInBook": 4,
+--           "bookId": 8,
+--           "arabic": "مُسْنَدُ عُثْمَانَ بْنِ عَفَّانَ رَضِيَ اللَّهُ عَنْهُ",
+--           "english": "Musnad Uthman ibn Affan"
+--         },
+--         {
+--           "idInBook": 5,
+--           "bookId": 8,
+--           "arabic": "وَمِنْ مُسْنَدِ عَلِيِّ بْنِ أَبِي طَالِبٍ رَضِيَ اللَّهُ عَنْهُ",
+--           "english": "Musnad 'Ali Ibn Abi Talib"
+--         },
+--         {
+--           "idInBook": 6,
+--           "bookId": 8,
+--           "arabic": "مُسْنَدُ أَبِي مُحَمَّدٍ طَلْحَةَ بْنِ عُبَيْدِ اللَّهِ رَضِيَ اللَّهُ تَعَالَى عَنْهُ",
+--           "english": "Musnad of Abu Muhammad Talhah bin 'Ubaidullah"
+--         },
+--         {
+--           "idInBook": 7,
+--           "bookId": 8,
+--           "arabic": "مُسْنَدُ الزُّبَيْرِ بْنِ الْعَوَّامِ رَضِيَ اللَّهُ عَنْهُ",
+--           "english": "The Musnad of az-Zubair bin al-'Awwam"
+--         },
+--         {
+--           "idInBook": 8,
+--           "bookId": 8,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 1,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 2,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 3,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 4,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 5,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 6,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 7,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 8,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 9,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 10,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 11,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 12,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 13,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 14,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 15,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 16,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 17,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 18,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 19,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 20,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 21,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 22,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 23,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         },
+--         {
+--           "idInBook": 24,
+--           "bookId": 9,
+--           "arabic": "",
+--           "english": ""
+--         }

@@ -1,11 +1,13 @@
 
-import hadiths_data from "@/hadithDB/test/hadiths.json";
+// import hadiths_data from "@/hadithDB/test/hadiths.json";
 import { atom } from "jotai";
 
 export enum Action {
   SEARCH = "SEARCH",
   RESET = "RESET",
 }
+
+const hadiths_data = []
 
 // Search Handler Function
 const searchHandler = async (query: string) => {

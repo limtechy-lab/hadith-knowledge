@@ -1,6 +1,6 @@
 "use client";
 
-import hadiths from "../../hadithDB/test/batch1.json";
+// import hadiths from "../../hadithDB/test/batch1.json";
 import { hadithType } from "@/types"
 
 const AddDataPage = () => {
@@ -19,6 +19,7 @@ const AddDataPage = () => {
     }
   };
 
+  const hadiths = []
   const addData = async () => {
     for (const hadith of hadiths
       // .filter((_, index) => index > 12)
